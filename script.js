@@ -13,7 +13,7 @@ var alphaPrompt = prompt('Would you like alphabetical characters in your passwor
 var numbersPrompt = confirm('Would you like numbers in your password?');
 var specialCharPrompt = confirm('Would you like to include special characters in your password?');
     
-    if (charPrompt === '8' && alphaPrompt === 'y' && numbersPrompt === true && specialCharPrompt === true) {
+   if (charPrompt === '8' && alphaPrompt === 'y' && numbersPrompt === true && specialCharPrompt === true) {
         generateBtn.addEventListener("click", writePassword8); 
     }
     else if (charPrompt === '8' && alphaPrompt === 'n' && numbersPrompt === true && specialCharPrompt === true){
@@ -43,7 +43,7 @@ var specialCharPrompt = confirm('Would you like to include special characters in
 
 
 
-// ***********NO ALPHABET for 8 character generator***********
+// NO ALPHABET for 8 character generator
 function noAlphabet8() {
     var password = generatePassword8();
     var passwordText = document.querySelector("#password");
@@ -59,7 +59,7 @@ function noAlphabet8() {
         passwordText.value = password;
    
     }
-// ********NO NUMBERS for 8 character generator***********
+// NO NUMBERS for 8 character generator
 function noNumbers8() {
     var password = generatePassword8();
     var passwordText = document.querySelector("#password");
@@ -74,7 +74,7 @@ function noNumbers8() {
             }   
         passwordText.value = password;
     }
-// ********NO SPECIAL CHARACTERS for 8 character generator***********
+// NO SPECIAL CHARACTERS for 8 character generator
     function noSpecialChars8() {
         var password = generatePassword8();
         var passwordText = document.querySelector("#password");
@@ -90,7 +90,7 @@ function noNumbers8() {
                 }   
             passwordText.value = password;    
         }
-// ***********NO ALPHABET for 16 character generator***********
+// NO ALPHABET for 16 character generator
     function noAlphabet16() {
         var password = generatePassword16();
         var passwordText = document.querySelector("#password");
@@ -105,7 +105,7 @@ function noNumbers8() {
             }   
         passwordText.value = password;
     }
-// ********NO NUMBERS for 16 character generator***********
+// NO NUMBERS for 16 character generator
     function noNumbers16() {
         var password = generatePassword16();
         var passwordText = document.querySelector("#password");
@@ -120,7 +120,7 @@ function noNumbers8() {
                 }   
         passwordText.value = password;    
     }
-// ********NO SPECIAL CHARACTERS for 16 character generator***********
+// NO SPECIAL CHARACTERS for 16 character generator
     function noSpecialChars16() {
         var password = generatePassword16();
         var passwordText = document.querySelector("#password");
@@ -135,7 +135,7 @@ function noNumbers8() {
                 }   
         passwordText.value = password;
     }
-// Function that generates 8 ALL random characters
+// Function that generates 8 random characters
     function writePassword8() {
         var password = generatePassword8();
         var passwordText = document.querySelector("#password");
