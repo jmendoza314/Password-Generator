@@ -4,7 +4,7 @@ var alpha = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var nums = "1234567890"
 var specialChar = "!@#$%^&*()+{}[]"
 const allChars = (alpha += nums += specialChar); 
-const noAlpha = (nums += specialChar);
+const noAlpha = "1234567890!@#$%^&*()+{}[]"
 const noNums = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*()+{}[]";
 const noSpecialChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890" 
 
